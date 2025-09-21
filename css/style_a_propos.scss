@@ -1,0 +1,139 @@
+* {
+    margin: 0px;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em; 
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo-site {
+    margin: auto;
+    display: block;
+    max-width: 30%;
+    height: auto;
+    animation: flotter 3s ease-in-out infinite;
+
+}
+
+@keyframes flotter {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(to right, #fcd5ce, #e0bbff, #d0a2f7);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.05);
+  position: relative;
+  border-bottom-left-radius: 50% 10%;
+  border-bottom-right-radius: 50% 10%;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sous-titre {
+    margin-top: -30px;
+    margin-bottom: 40px;
+    color: #444;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar_links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+
+.navbar_links a {
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.navbar_links a:hover {
+    color: #9eccd7;
+    transform: scale(1.05);
+}
+
+.titre_a-propos {
+    margin-top: 80px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.lignepresentation {
+    margin: 100px;
+}
+
+.ligne {
+    content: "";
+  display: block;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #faa99b, transparent);
+  margin: 0 0;
+}
+
+.presentation {
+    text-align: justify;
+    line-height: 1.5;
+    padding: 1.5em;
+    background: radial-gradient(circle at center, #f5d7f8 0%, #ffffff 80%);
+}
+
+
+.section-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: auto;
+    max-width: 1100px;
+}
+
+.section-images img {
+    display: block;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100%;
+    animation: fadein 2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadein {
+  to { opacity: 1; }
+}
+
+
+footer {
+    font-size: 0.8em;
+    margin: 110px 30px 30px 30px;
+    text-align: center;
+}

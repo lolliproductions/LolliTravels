@@ -1,0 +1,142 @@
+* {
+  margin: 0px;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5em;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo-site {
+  margin: auto;
+  display: block;
+  max-width: 30%;
+  height: auto;
+  animation: flotter 3s ease-in-out infinite;
+}
+
+@keyframes flotter {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+header {
+  text-align: center;
+  background: linear-gradient(to right, #f8b7c7, #a2dfe3);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.05);
+  position: relative;
+  border-bottom-left-radius: 50% 10%;
+  border-bottom-right-radius: 50% 10%;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sous-titre {
+  margin-top: -30px;
+  margin-bottom: 40px;
+  color: #444;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.navbar_links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+.navbar_links a {
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+.navbar_links a:hover {
+  color: #cdb5e0;
+  transform: scale(1.05);
+}
+
+.titre_prochains-voyages {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.titre_prochain-pays {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 50px;
+}
+
+.container_pays {
+  border-radius: 20px;
+  background: #d9efea;
+  margin: 80px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border: 1px solid black;
+}
+
+.timeline-voyage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 3rem auto;
+}
+
+.ville {
+  text-align: center;
+}
+.ville img {
+  width: 200px;
+  height: 250px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 0.5rem;
+  object-fit: cover;
+}
+.ville p {
+  margin: 0;
+}
+
+.ligne {
+  width: 40px;
+  height: 3px;
+  background-color: #ccc;
+}
+
+.date-duree {
+  text-align: center;
+  line-height: 1.5em;
+}
+
+footer {
+  font-size: 0.8em;
+  margin: 30px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style_prochains_voyages.css.map */
